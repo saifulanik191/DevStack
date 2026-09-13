@@ -3,6 +3,7 @@ import Tech from "./component/Tech";
 import type { ItechType } from "./Type/TechType";
 import Nav from "./component/Nav";
 import Banner from "./component/Banner";
+import Footer from "./component/Footer";
 
 const techFetch = async (): Promise<ItechType[]> => {
   const res = await fetch("/data.json");
@@ -28,6 +29,7 @@ function App() {
           setTechCount={setTechCount}
         />
       </Suspense>
+      <Footer />
     </>
   );
 }
