@@ -16,7 +16,6 @@ const AllStack = ({
   addedTech,
   setAddedTech,
 }: IallStackProps) => {
-  // console.log(techCount, setTechCount);
   return (
     <div className="grid grid-cols-3 gap-y-10 gap-x-0">
       {tech.map((item: ItechType, ind: number) => {

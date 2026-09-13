@@ -25,11 +25,9 @@ const TechCard = ({
     setIsAdded(true);
     setTechCount(techCount + 1);
 
-    // tech add logic
     setAddedTech([...addedTech, item]);
   };
 
-  // console.log(isAdded, setIsAdded, "from userstate");
   return (
     <div
       className={`w-90 rounded-3xl border bg-white p-6 shadow-sm transition-all duration-300 ${

@@ -13,15 +13,12 @@ const techFetch = async (): Promise<ItechType[]> => {
 };
 
 function App() {
-  // console.log(techFetch);
-  // const techPromise = techFetch();
   const [techpromise] = useState(() => techFetch());
   const [techCount, setTechCount] = useState(0);
   return (
     <>
       <Nav />
       <Banner />
-
       <Suspense fallback={<h2>Data Loading.....</h2>}>
         <Tech
           techPromise={techpromise}
