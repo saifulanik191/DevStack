@@ -24,7 +24,7 @@ const Banner = () => {
             <button className="btn btn-outline">Learn More</button>
           </div>
         </div>
-        <img src={bannerImg} alt="BannerImg" />
+        <img className="ml-20 text-right" src={bannerImg} alt="BannerImg" />
       </div>
     </section>
   );
